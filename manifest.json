@@ -1,0 +1,55 @@
+{
+  "manifest_version": 3,
+  "name": "Mini Features",
+  "version": "0.0.1",
+  "minimum_chrome_version": "116",
+
+  "description": "Block F11 and middle mouse button scroll. Restore closed tabs with a hotkey (Alt+Shift+T by default).",
+
+  "permissions": [
+    "storage",
+    "tabs",
+    "sessions",
+    "offscreen"
+  ],
+
+  "action": {
+    "default_icon": {
+      "16": "assets/icons/[c]icon16.png",
+      "32": "assets/icons/[c]icon32.png"
+    },
+    "default_title": "Mini Features",
+    "default_popup": "src/popup.html"
+  },
+
+  "options_page": "src/settings.html",
+
+  "icons": {
+    "16": "assets/icons/[c]icon16.png",
+    "32": "assets/icons/[c]icon32.png",
+    "48": "assets/icons/[c]icon48.png",
+    "128": "assets/icons/[c]icon128.png",
+    "256": "assets/icons/[c]icon256.png",
+    "512": "assets/icons/[c]icon512.png"
+  },
+
+  "background": {
+    "service_worker": "src/background.js"
+  },
+
+  "commands": {
+    "restore": {
+      "suggested_key": {
+        "default": "Alt+Shift+T"
+      },
+      "description": "Restore last closed tab"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body, a { color: #e8eaed; }
+
+        body {
+            width: 270px;
+            text-align: center;
+            background-color: #202124;
+            padding: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .logo { height: 55px; margin-bottom: 8px; }
+
+        h1 { margin-top: 5px; margin-bottom: 10px; font-size: 1.3em; }
+
+        .settings-btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 9px 20px;
+            background-color: #8ab4f8;
+            color: #202124;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .settings-btn:hover { background-color: #aac7fa; }
+
+        .footer { margin-top: 13px; margin-bottom: 4px; font-size: 0.85em; }
+        .footer a { color: #8ab4f8; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+
+        .version { font-size: 0.78em; color: #9aa0a6; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <img src="../assets/icons/[c]icon128.png" class="logo" />
+    <h1 id="txt-title">Mini Features</h1>
+
+    <button class="settings-btn" id="openSettings">
+        <span id="txt-openSettings">Settings</span>
+    </button>
+
+    <div class="footer">
+        <a href="https://github.com/bogfaust/mini-features" target="_blank" id="txt-github">Visit project on GitHub</a>
+    </div>
+    <div class="version" id="txt-version">Version</div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
