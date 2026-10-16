@@ -22,6 +22,11 @@ A small collection of mini features for your browser.
 
 ## Installation
 
+### From Chrome Web Store
+
+Search for **Mini Features** in the [Chrome Web Store](https://chrome.google.com/webstore).
+
+### Manual (Developer Mode)
 1. Download or clone this repository
 2. Open Chrome and go to `chrome://extensions/`
 3. Enable **Developer mode** (top right toggle)
